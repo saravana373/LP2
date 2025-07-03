@@ -1,36 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login / Signup</title>
+  <title>Local Auth + Task App</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h2 id="form-title">Signup</h2>
-    <p id="error-message" class="error"></p>
-    
-    <input id="signup-username" placeholder="Username" />
-    <input id="signup-password" placeholder="Password" type="password" />
-    <input id="signup-confirm-password" placeholder="Confirm Password" type="password" />
+  <h2>Signup</h2>
+  <input id="signup-username" placeholder="Username" />
+  <input id="signup-password" placeholder="Password" type="password" />
+  <button onclick="signup()">Signup</button>
 
-    <button onclick="signup()">Signup</button>
-    <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+  <h2>Login</h2>
+  <input id="login-username" placeholder="Username" />
+  <input id="login-password" placeholder="Password" type="password" />
+  <button onclick="login()">Login</button>
 
-    <div id="login-section" style="display:none;">
-      <h2>Login</h2>
-      <input id="login-username" placeholder="Username" />
-      <input id="login-password" placeholder="Password" type="password" />
-      <button onclick="login()">Login</button>
-    </div>
-
-    <div id="task-section" style="display: none;">
-      <h3>Welcome <span id="welcome-user"></span></h3>
-      <input id="task-input" placeholder="New task" />
-      <button onclick="addTask()">Add</button>
-      <ul id="task-list"></ul>
-    </div>
+  <div id="task-section" style="display: none;">
+    <h3>Welcome <span id="welcome-user"></span></h3>
+    <input id="task-input" placeholder="New task" />
+    <button onclick="addTask()">Add</button>
+    <ul id="task-list"></ul>
   </div>
 
   <script src="script.js"></script>
 </body>
-</html>
+</html> 
+
+
+
